@@ -1,0 +1,1353 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D1020BD3058F3E7787023E8 /* Pods_TmdbMVP_UICode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5270A0E7FCD923A692AA71DF /* Pods_TmdbMVP_UICode.framework */; };
+		7F449CE49247239F0D618D16 /* Pods_TmdbMVP_UICodeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D98BF0FDAD88A918A4FC8518 /* Pods_TmdbMVP_UICodeUITests.framework */; };
+		AD888CDA4180818EADAC8E63 /* Pods_TmdbMVP_UICodeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5C106B9310421C98C240DCD /* Pods_TmdbMVP_UICodeTests.framework */; };
+		CE257E362BB7C6B40088AEDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE257E352BB7C6B40088AEDC /* AppDelegate.swift */; };
+		CE257E3F2BB7C6BF0088AEDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE257E3E2BB7C6BF0088AEDC /* Assets.xcassets */; };
+		CE257E422BB7C6BF0088AEDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE257E402BB7C6BF0088AEDC /* LaunchScreen.storyboard */; };
+		CE257E4D2BB7C6C00088AEDC /* TmdbMVP_UICodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE257E4C2BB7C6C00088AEDC /* TmdbMVP_UICodeTests.swift */; };
+		CE257E582BB7C6C00088AEDC /* TmdbMVP_UICodeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE257E572BB7C6C00088AEDC /* TmdbMVP_UICodeUITests.swift */; };
+		CE2581722BB7F8280088AEDC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE2581742BB7F8280088AEDC /* Localizable.strings */; };
+		CE2581F12BB812B70088AEDC /* feature_genre.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2581F02BB812B70088AEDC /* feature_genre.framework */; };
+		CE2581F22BB812B70088AEDC /* feature_genre.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE2581F02BB812B70088AEDC /* feature_genre.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE2581F72BB812C30088AEDC /* feature_movie_by_genre.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2581F62BB812C20088AEDC /* feature_movie_by_genre.framework */; };
+		CE2581F82BB812C30088AEDC /* feature_movie_by_genre.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE2581F62BB812C20088AEDC /* feature_movie_by_genre.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE2581FC2BB812D10088AEDC /* feature_movie_detail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2581FB2BB812D10088AEDC /* feature_movie_detail.framework */; };
+		CE2581FD2BB812D10088AEDC /* feature_movie_detail.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE2581FB2BB812D10088AEDC /* feature_movie_detail.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE2582012BB812DA0088AEDC /* feature_movie_review.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2582002BB812DA0088AEDC /* feature_movie_review.framework */; };
+		CE2582022BB812DA0088AEDC /* feature_movie_review.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE2582002BB812DA0088AEDC /* feature_movie_review.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE2582062BB812E40088AEDC /* feature_movie_trailer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2582052BB812E40088AEDC /* feature_movie_trailer.framework */; };
+		CE2582072BB812E40088AEDC /* feature_movie_trailer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE2582052BB812E40088AEDC /* feature_movie_trailer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE4B59802BB8DB8400673D0D /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4B597F2BB8DB8400673D0D /* Coordinator.swift */; };
+		CE4B59842BB8DBB700673D0D /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4B59832BB8DBB700673D0D /* AppCoordinator.swift */; };
+		CEAED9B52BC20C4300EC7E61 /* feature_error_message.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEAED9B42BC20C4300EC7E61 /* feature_error_message.framework */; };
+		CEAED9B62BC20C4300EC7E61 /* feature_error_message.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CEAED9B42BC20C4300EC7E61 /* feature_error_message.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CEF48ACC2BD4009B001DC0A0 /* domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2581E92BB8129E0088AEDC /* domain.framework */; };
+		CEF48ACD2BD4009B001DC0A0 /* domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE2581E92BB8129E0088AEDC /* domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CEF48AD02BD40134001DC0A0 /* data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2581E22BB812960088AEDC /* data.framework */; };
+		CEF48AD12BD40134001DC0A0 /* data.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE2581E22BB812960088AEDC /* data.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CEF48AD42BD401FE001DC0A0 /* app_framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2581D82BB8128E0088AEDC /* app_framework.framework */; };
+		CEF48AD52BD401FE001DC0A0 /* app_framework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE2581D82BB8128E0088AEDC /* app_framework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE257E492BB7C6C00088AEDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE257E2A2BB7C6B40088AEDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE257E312BB7C6B40088AEDC;
+			remoteInfo = "TmdbMVP-UICode";
+		};
+		CE257E542BB7C6C00088AEDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE257E2A2BB7C6B40088AEDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE257E312BB7C6B40088AEDC;
+			remoteInfo = "TmdbMVP-UICode";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CE2581F32BB812B70088AEDC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CEAED9B62BC20C4300EC7E61 /* feature_error_message.framework in Embed Frameworks */,
+				CE2581F82BB812C30088AEDC /* feature_movie_by_genre.framework in Embed Frameworks */,
+				CE2582072BB812E40088AEDC /* feature_movie_trailer.framework in Embed Frameworks */,
+				CEF48AD52BD401FE001DC0A0 /* app_framework.framework in Embed Frameworks */,
+				CEF48ACD2BD4009B001DC0A0 /* domain.framework in Embed Frameworks */,
+				CEF48AD12BD40134001DC0A0 /* data.framework in Embed Frameworks */,
+				CE2581F22BB812B70088AEDC /* feature_genre.framework in Embed Frameworks */,
+				CE2582022BB812DA0088AEDC /* feature_movie_review.framework in Embed Frameworks */,
+				CE2581FD2BB812D10088AEDC /* feature_movie_detail.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0AF31DCCDBEFD18673AFA2D1 /* Pods-TmdbMVP-UICodeTests.release staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TmdbMVP-UICodeTests.release staging.xcconfig"; path = "Target Support Files/Pods-TmdbMVP-UICodeTests/Pods-TmdbMVP-UICodeTests.release staging.xcconfig"; sourceTree = "<group>"; };
+		0C219B25FE1822E95A2DE8B0 /* Pods-TmdbMVP-UICode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TmdbMVP-UICode.debug.xcconfig"; path = "Target Support Files/Pods-TmdbMVP-UICode/Pods-TmdbMVP-UICode.debug.xcconfig"; sourceTree = "<group>"; };
+		13310FB2907E48004A4BB86B /* Pods-TmdbMVP-UICodeTests.release verify.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TmdbMVP-UICodeTests.release verify.xcconfig"; path = "Target Support Files/Pods-TmdbMVP-UICodeTests/Pods-TmdbMVP-UICodeTests.release verify.xcconfig"; sourceTree = "<group>"; };
+		1741FB3724248FE9574BFF08 /* Pods-TmdbMVP-UICodeUITests.debug staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TmdbMVP-UICodeUITests.debug staging.xcconfig"; path = "Target Support Files/Pods-TmdbMVP-UICodeUITests/Pods-TmdbMVP-UICodeUITests.debug staging.xcconfig"; sourceTree = "<group>"; };
+		246EFC5734C9B37827FD8BA8 /* Pods-TmdbMVP-UICodeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TmdbMVP-UICodeTests.debug.xcconfig"; path = "Target Support Files/Pods-TmdbMVP-UICodeTests/Pods-TmdbMVP-UICodeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		29A826387B5DCB8BB2CB9825 /* Pods-TmdbMVP-UICode.debug verify.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TmdbMVP-UICode.debug verify.xcconfig"; path = "Target Support Files/Pods-TmdbMVP-UICode/Pods-TmdbMVP-UICode.debug verify.xcconfig"; sourceTree = "<group>"; };
+		3FFFD0801EA52A4D42B20F05 /* Pods-TmdbMVP-UICodeTests.debug staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TmdbMVP-UICodeTests.debug staging.xcconfig"; path = "Target Support Files/Pods-TmdbMVP-UICodeTests/Pods-TmdbMVP-UICodeTests.debug staging.xcconfig"; sourceTree = "<group>"; };
+		478ED1DAD23812552EAB8CE5 /* Pods-TmdbMVP-UICodeUITests.debug production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TmdbMVP-UICodeUITests.debug production.xcconfig"; path = "Target Support Files/Pods-TmdbMVP-UICodeUITests/Pods-TmdbMVP-UICodeUITests.debug production.xcconfig"; sourceTree = "<group>"; };
+		48BBF82E00F5F7B694A62826 /* Pods-TmdbMVP-UICode.release staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TmdbMVP-UICode.release staging.xcconfig"; path = "Target Support Files/Pods-TmdbMVP-UICode/Pods-TmdbMVP-UICode.release staging.xcconfig"; sourceTree = "<group>"; };
+		4E328D86EC507940D92B3D8A /* Pods-TmdbMVP-UICode.release verify.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TmdbMVP-UICode.release verify.xcconfig"; path = "Target Support Files/Pods-TmdbMVP-UICode/Pods-TmdbMVP-UICode.release verify.xcconfig"; sourceTree = "<group>"; };
+		5270A0E7FCD923A692AA71DF /* Pods_TmdbMVP_UICode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TmdbMVP_UICode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F2FE181322BF4E4ED2D3800 /* Pods-TmdbMVP-UICodeTests.debug verify.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TmdbMVP-UICodeTests.debug verify.xcconfig"; path = "Target Support Files/Pods-TmdbMVP-UICodeTests/Pods-TmdbMVP-UICodeTests.debug verify.xcconfig"; sourceTree = "<group>"; };
+		63C88BEA52E908A91BC4A513 /* Pods-TmdbMVP-UICodeUITests.release staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TmdbMVP-UICodeUITests.release staging.xcconfig"; path = "Target Support Files/Pods-TmdbMVP-UICodeUITests/Pods-TmdbMVP-UICodeUITests.release staging.xcconfig"; sourceTree = "<group>"; };
+		6701E89D26793968F3304AD8 /* Pods-TmdbMVP-UICode.debug production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TmdbMVP-UICode.debug production.xcconfig"; path = "Target Support Files/Pods-TmdbMVP-UICode/Pods-TmdbMVP-UICode.debug production.xcconfig"; sourceTree = "<group>"; };
+		6C65CC599276576BF35FFB46 /* Pods-TmdbMVP-UICodeTests.release production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TmdbMVP-UICodeTests.release production.xcconfig"; path = "Target Support Files/Pods-TmdbMVP-UICodeTests/Pods-TmdbMVP-UICodeTests.release production.xcconfig"; sourceTree = "<group>"; };
+		73E1EF01C3205E90B13E9186 /* Pods-TmdbMVP-UICodeUITests.release production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TmdbMVP-UICodeUITests.release production.xcconfig"; path = "Target Support Files/Pods-TmdbMVP-UICodeUITests/Pods-TmdbMVP-UICodeUITests.release production.xcconfig"; sourceTree = "<group>"; };
+		7863FE8C7593C483AD662D82 /* Pods-TmdbMVP-UICode.debug staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TmdbMVP-UICode.debug staging.xcconfig"; path = "Target Support Files/Pods-TmdbMVP-UICode/Pods-TmdbMVP-UICode.debug staging.xcconfig"; sourceTree = "<group>"; };
+		94E3C923CD6F6E36802D35FB /* Pods-TmdbMVP-UICodeUITests.debug verify.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TmdbMVP-UICodeUITests.debug verify.xcconfig"; path = "Target Support Files/Pods-TmdbMVP-UICodeUITests/Pods-TmdbMVP-UICodeUITests.debug verify.xcconfig"; sourceTree = "<group>"; };
+		9F3AD66A8E85C9FC6D002BFD /* Pods-TmdbMVP-UICodeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TmdbMVP-UICodeUITests.debug.xcconfig"; path = "Target Support Files/Pods-TmdbMVP-UICodeUITests/Pods-TmdbMVP-UICodeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C5C106B9310421C98C240DCD /* Pods_TmdbMVP_UICodeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TmdbMVP_UICodeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDE7A35A47E919EABEC3F848 /* Pods-TmdbMVP-UICodeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TmdbMVP-UICodeUITests.release.xcconfig"; path = "Target Support Files/Pods-TmdbMVP-UICodeUITests/Pods-TmdbMVP-UICodeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CE257E322BB7C6B40088AEDC /* TmdbMVP-UICode (Staging-Debug).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TmdbMVP-UICode (Staging-Debug).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE257E352BB7C6B40088AEDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE257E3E2BB7C6BF0088AEDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE257E412BB7C6BF0088AEDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE257E432BB7C6BF0088AEDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE257E482BB7C6C00088AEDC /* TmdbMVP-UICodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TmdbMVP-UICodeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE257E4C2BB7C6C00088AEDC /* TmdbMVP_UICodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TmdbMVP_UICodeTests.swift; sourceTree = "<group>"; };
+		CE257E4E2BB7C6C00088AEDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE257E532BB7C6C00088AEDC /* TmdbMVP-UICodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TmdbMVP-UICodeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE257E572BB7C6C00088AEDC /* TmdbMVP_UICodeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TmdbMVP_UICodeUITests.swift; sourceTree = "<group>"; };
+		CE257E592BB7C6C00088AEDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE2581692BB7F7720088AEDC /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		CE2581732BB7F8280088AEDC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CE2581782BB7F8310088AEDC /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CE2581D82BB8128E0088AEDC /* app_framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = app_framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE2581E22BB812960088AEDC /* data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE2581E92BB8129E0088AEDC /* domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE2581F02BB812B70088AEDC /* feature_genre.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = feature_genre.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE2581F62BB812C20088AEDC /* feature_movie_by_genre.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = feature_movie_by_genre.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE2581FB2BB812D10088AEDC /* feature_movie_detail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = feature_movie_detail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE2582002BB812DA0088AEDC /* feature_movie_review.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = feature_movie_review.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE2582052BB812E40088AEDC /* feature_movie_trailer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = feature_movie_trailer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE4B597F2BB8DB8400673D0D /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		CE4B59832BB8DBB700673D0D /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		CEAED9B42BC20C4300EC7E61 /* feature_error_message.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = feature_error_message.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D98BF0FDAD88A918A4FC8518 /* Pods_TmdbMVP_UICodeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TmdbMVP_UICodeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F40C30088DBC8F5B966B9E4F /* Pods-TmdbMVP-UICodeTests.debug production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TmdbMVP-UICodeTests.debug production.xcconfig"; path = "Target Support Files/Pods-TmdbMVP-UICodeTests/Pods-TmdbMVP-UICodeTests.debug production.xcconfig"; sourceTree = "<group>"; };
+		F504D41F249F7AB9146DBC7C /* Pods-TmdbMVP-UICode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TmdbMVP-UICode.release.xcconfig"; path = "Target Support Files/Pods-TmdbMVP-UICode/Pods-TmdbMVP-UICode.release.xcconfig"; sourceTree = "<group>"; };
+		F8FB0897FC7099AFC321F21F /* Pods-TmdbMVP-UICode.release production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TmdbMVP-UICode.release production.xcconfig"; path = "Target Support Files/Pods-TmdbMVP-UICode/Pods-TmdbMVP-UICode.release production.xcconfig"; sourceTree = "<group>"; };
+		FB71B930E47C65C6FFC2370F /* Pods-TmdbMVP-UICodeUITests.release verify.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TmdbMVP-UICodeUITests.release verify.xcconfig"; path = "Target Support Files/Pods-TmdbMVP-UICodeUITests/Pods-TmdbMVP-UICodeUITests.release verify.xcconfig"; sourceTree = "<group>"; };
+		FD735B09A66702C318048C38 /* Pods-TmdbMVP-UICodeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TmdbMVP-UICodeTests.release.xcconfig"; path = "Target Support Files/Pods-TmdbMVP-UICodeTests/Pods-TmdbMVP-UICodeTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE257E2F2BB7C6B40088AEDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEF48ACC2BD4009B001DC0A0 /* domain.framework in Frameworks */,
+				CEAED9B52BC20C4300EC7E61 /* feature_error_message.framework in Frameworks */,
+				CEF48AD02BD40134001DC0A0 /* data.framework in Frameworks */,
+				CE2581F12BB812B70088AEDC /* feature_genre.framework in Frameworks */,
+				CE2582062BB812E40088AEDC /* feature_movie_trailer.framework in Frameworks */,
+				CEF48AD42BD401FE001DC0A0 /* app_framework.framework in Frameworks */,
+				CE2581FC2BB812D10088AEDC /* feature_movie_detail.framework in Frameworks */,
+				2D1020BD3058F3E7787023E8 /* Pods_TmdbMVP_UICode.framework in Frameworks */,
+				CE2581F72BB812C30088AEDC /* feature_movie_by_genre.framework in Frameworks */,
+				CE2582012BB812DA0088AEDC /* feature_movie_review.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE257E452BB7C6C00088AEDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD888CDA4180818EADAC8E63 /* Pods_TmdbMVP_UICodeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE257E502BB7C6C00088AEDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F449CE49247239F0D618D16 /* Pods_TmdbMVP_UICodeUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		21A8B51BD673FEEDEEECC1ED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0C219B25FE1822E95A2DE8B0 /* Pods-TmdbMVP-UICode.debug.xcconfig */,
+				F504D41F249F7AB9146DBC7C /* Pods-TmdbMVP-UICode.release.xcconfig */,
+				246EFC5734C9B37827FD8BA8 /* Pods-TmdbMVP-UICodeTests.debug.xcconfig */,
+				FD735B09A66702C318048C38 /* Pods-TmdbMVP-UICodeTests.release.xcconfig */,
+				9F3AD66A8E85C9FC6D002BFD /* Pods-TmdbMVP-UICodeUITests.debug.xcconfig */,
+				CDE7A35A47E919EABEC3F848 /* Pods-TmdbMVP-UICodeUITests.release.xcconfig */,
+				7863FE8C7593C483AD662D82 /* Pods-TmdbMVP-UICode.debug staging.xcconfig */,
+				29A826387B5DCB8BB2CB9825 /* Pods-TmdbMVP-UICode.debug verify.xcconfig */,
+				6701E89D26793968F3304AD8 /* Pods-TmdbMVP-UICode.debug production.xcconfig */,
+				48BBF82E00F5F7B694A62826 /* Pods-TmdbMVP-UICode.release staging.xcconfig */,
+				4E328D86EC507940D92B3D8A /* Pods-TmdbMVP-UICode.release verify.xcconfig */,
+				F8FB0897FC7099AFC321F21F /* Pods-TmdbMVP-UICode.release production.xcconfig */,
+				3FFFD0801EA52A4D42B20F05 /* Pods-TmdbMVP-UICodeTests.debug staging.xcconfig */,
+				5F2FE181322BF4E4ED2D3800 /* Pods-TmdbMVP-UICodeTests.debug verify.xcconfig */,
+				F40C30088DBC8F5B966B9E4F /* Pods-TmdbMVP-UICodeTests.debug production.xcconfig */,
+				0AF31DCCDBEFD18673AFA2D1 /* Pods-TmdbMVP-UICodeTests.release staging.xcconfig */,
+				13310FB2907E48004A4BB86B /* Pods-TmdbMVP-UICodeTests.release verify.xcconfig */,
+				6C65CC599276576BF35FFB46 /* Pods-TmdbMVP-UICodeTests.release production.xcconfig */,
+				1741FB3724248FE9574BFF08 /* Pods-TmdbMVP-UICodeUITests.debug staging.xcconfig */,
+				94E3C923CD6F6E36802D35FB /* Pods-TmdbMVP-UICodeUITests.debug verify.xcconfig */,
+				478ED1DAD23812552EAB8CE5 /* Pods-TmdbMVP-UICodeUITests.debug production.xcconfig */,
+				63C88BEA52E908A91BC4A513 /* Pods-TmdbMVP-UICodeUITests.release staging.xcconfig */,
+				FB71B930E47C65C6FFC2370F /* Pods-TmdbMVP-UICodeUITests.release verify.xcconfig */,
+				73E1EF01C3205E90B13E9186 /* Pods-TmdbMVP-UICodeUITests.release production.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A18DBA913B0BA610AA5CCE56 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEAED9B42BC20C4300EC7E61 /* feature_error_message.framework */,
+				CE2582052BB812E40088AEDC /* feature_movie_trailer.framework */,
+				CE2582002BB812DA0088AEDC /* feature_movie_review.framework */,
+				CE2581FB2BB812D10088AEDC /* feature_movie_detail.framework */,
+				CE2581F62BB812C20088AEDC /* feature_movie_by_genre.framework */,
+				CE2581F02BB812B70088AEDC /* feature_genre.framework */,
+				CE2581E92BB8129E0088AEDC /* domain.framework */,
+				CE2581E22BB812960088AEDC /* data.framework */,
+				CE2581D82BB8128E0088AEDC /* app_framework.framework */,
+				5270A0E7FCD923A692AA71DF /* Pods_TmdbMVP_UICode.framework */,
+				C5C106B9310421C98C240DCD /* Pods_TmdbMVP_UICodeTests.framework */,
+				D98BF0FDAD88A918A4FC8518 /* Pods_TmdbMVP_UICodeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE257E292BB7C6B40088AEDC = {
+			isa = PBXGroup;
+			children = (
+				CE257E342BB7C6B40088AEDC /* TmdbMVP-UICode */,
+				CE257E4B2BB7C6C00088AEDC /* TmdbMVP-UICodeTests */,
+				CE257E562BB7C6C00088AEDC /* TmdbMVP-UICodeUITests */,
+				CE257E332BB7C6B40088AEDC /* Products */,
+				21A8B51BD673FEEDEEECC1ED /* Pods */,
+				A18DBA913B0BA610AA5CCE56 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CE257E332BB7C6B40088AEDC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE257E322BB7C6B40088AEDC /* TmdbMVP-UICode (Staging-Debug).app */,
+				CE257E482BB7C6C00088AEDC /* TmdbMVP-UICodeTests.xctest */,
+				CE257E532BB7C6C00088AEDC /* TmdbMVP-UICodeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE257E342BB7C6B40088AEDC /* TmdbMVP-UICode */ = {
+			isa = PBXGroup;
+			children = (
+				CE257E352BB7C6B40088AEDC /* AppDelegate.swift */,
+				CE257E3E2BB7C6BF0088AEDC /* Assets.xcassets */,
+				CE257E402BB7C6BF0088AEDC /* LaunchScreen.storyboard */,
+				CE257E432BB7C6BF0088AEDC /* Info.plist */,
+				CE2581742BB7F8280088AEDC /* Localizable.strings */,
+				CE4B597F2BB8DB8400673D0D /* Coordinator.swift */,
+				CE4B59832BB8DBB700673D0D /* AppCoordinator.swift */,
+			);
+			path = "TmdbMVP-UICode";
+			sourceTree = "<group>";
+		};
+		CE257E4B2BB7C6C00088AEDC /* TmdbMVP-UICodeTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE257E4C2BB7C6C00088AEDC /* TmdbMVP_UICodeTests.swift */,
+				CE257E4E2BB7C6C00088AEDC /* Info.plist */,
+			);
+			path = "TmdbMVP-UICodeTests";
+			sourceTree = "<group>";
+		};
+		CE257E562BB7C6C00088AEDC /* TmdbMVP-UICodeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE257E572BB7C6C00088AEDC /* TmdbMVP_UICodeUITests.swift */,
+				CE257E592BB7C6C00088AEDC /* Info.plist */,
+			);
+			path = "TmdbMVP-UICodeUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE257E312BB7C6B40088AEDC /* TmdbMVP-UICode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE257E5C2BB7C6C00088AEDC /* Build configuration list for PBXNativeTarget "TmdbMVP-UICode" */;
+			buildPhases = (
+				CC1B509E2C9258CA01BBB199 /* [CP] Check Pods Manifest.lock */,
+				CE257E2E2BB7C6B40088AEDC /* Sources */,
+				CE257E2F2BB7C6B40088AEDC /* Frameworks */,
+				CE257E302BB7C6B40088AEDC /* Resources */,
+				7FE88E4A0B97607C2FC37A4B /* [CP] Embed Pods Frameworks */,
+				CE2581F32BB812B70088AEDC /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TmdbMVP-UICode";
+			productName = "TmdbMVP-UICode";
+			productReference = CE257E322BB7C6B40088AEDC /* TmdbMVP-UICode (Staging-Debug).app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE257E472BB7C6C00088AEDC /* TmdbMVP-UICodeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE257E5F2BB7C6C00088AEDC /* Build configuration list for PBXNativeTarget "TmdbMVP-UICodeTests" */;
+			buildPhases = (
+				9A6324DB0701A80DA672056A /* [CP] Check Pods Manifest.lock */,
+				CE257E442BB7C6C00088AEDC /* Sources */,
+				CE257E452BB7C6C00088AEDC /* Frameworks */,
+				CE257E462BB7C6C00088AEDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE257E4A2BB7C6C00088AEDC /* PBXTargetDependency */,
+			);
+			name = "TmdbMVP-UICodeTests";
+			productName = "TmdbMVP-UICodeTests";
+			productReference = CE257E482BB7C6C00088AEDC /* TmdbMVP-UICodeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CE257E522BB7C6C00088AEDC /* TmdbMVP-UICodeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE257E622BB7C6C00088AEDC /* Build configuration list for PBXNativeTarget "TmdbMVP-UICodeUITests" */;
+			buildPhases = (
+				E243195069F9300B57E24244 /* [CP] Check Pods Manifest.lock */,
+				CE257E4F2BB7C6C00088AEDC /* Sources */,
+				CE257E502BB7C6C00088AEDC /* Frameworks */,
+				CE257E512BB7C6C00088AEDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE257E552BB7C6C00088AEDC /* PBXTargetDependency */,
+			);
+			name = "TmdbMVP-UICodeUITests";
+			productName = "TmdbMVP-UICodeUITests";
+			productReference = CE257E532BB7C6C00088AEDC /* TmdbMVP-UICodeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE257E2A2BB7C6B40088AEDC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					CE257E312BB7C6B40088AEDC = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					CE257E472BB7C6C00088AEDC = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = CE257E312BB7C6B40088AEDC;
+					};
+					CE257E522BB7C6C00088AEDC = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = CE257E312BB7C6B40088AEDC;
+					};
+				};
+			};
+			buildConfigurationList = CE257E2D2BB7C6B40088AEDC /* Build configuration list for PBXProject "TmdbMVP-UICode" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				id,
+			);
+			mainGroup = CE257E292BB7C6B40088AEDC;
+			productRefGroup = CE257E332BB7C6B40088AEDC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE257E312BB7C6B40088AEDC /* TmdbMVP-UICode */,
+				CE257E472BB7C6C00088AEDC /* TmdbMVP-UICodeTests */,
+				CE257E522BB7C6C00088AEDC /* TmdbMVP-UICodeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE257E302BB7C6B40088AEDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE257E422BB7C6BF0088AEDC /* LaunchScreen.storyboard in Resources */,
+				CE2581722BB7F8280088AEDC /* Localizable.strings in Resources */,
+				CE257E3F2BB7C6BF0088AEDC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE257E462BB7C6C00088AEDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE257E512BB7C6C00088AEDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7FE88E4A0B97607C2FC37A4B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TmdbMVP-UICode/Pods-TmdbMVP-UICode-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TmdbMVP-UICode/Pods-TmdbMVP-UICode-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TmdbMVP-UICode/Pods-TmdbMVP-UICode-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A6324DB0701A80DA672056A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TmdbMVP-UICodeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC1B509E2C9258CA01BBB199 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TmdbMVP-UICode-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E243195069F9300B57E24244 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TmdbMVP-UICodeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE257E2E2BB7C6B40088AEDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE4B59802BB8DB8400673D0D /* Coordinator.swift in Sources */,
+				CE4B59842BB8DBB700673D0D /* AppCoordinator.swift in Sources */,
+				CE257E362BB7C6B40088AEDC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE257E442BB7C6C00088AEDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE257E4D2BB7C6C00088AEDC /* TmdbMVP_UICodeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE257E4F2BB7C6C00088AEDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE257E582BB7C6C00088AEDC /* TmdbMVP_UICodeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE257E4A2BB7C6C00088AEDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE257E312BB7C6B40088AEDC /* TmdbMVP-UICode */;
+			targetProxy = CE257E492BB7C6C00088AEDC /* PBXContainerItemProxy */;
+		};
+		CE257E552BB7C6C00088AEDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE257E312BB7C6B40088AEDC /* TmdbMVP-UICode */;
+			targetProxy = CE257E542BB7C6C00088AEDC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE257E402BB7C6BF0088AEDC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE257E412BB7C6BF0088AEDC /* Base */,
+				CE2581692BB7F7720088AEDC /* id */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CE2581742BB7F8280088AEDC /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE2581732BB7F8280088AEDC /* en */,
+				CE2581782BB7F8310088AEDC /* id */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE257E5A2BB7C6C00088AEDC /* Debug Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug Staging";
+		};
+		CE257E5B2BB7C6C00088AEDC /* Release Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release Staging";
+		};
+		CE257E5D2BB7C6C00088AEDC /* Debug Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7863FE8C7593C483AD662D82 /* Pods-TmdbMVP-UICode.debug staging.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "TmdbMVP-UICode/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dpfht.TmdbMVP-UICode.staging.debug";
+				PRODUCT_NAME = "$(TARGET_NAME) (Staging-Debug)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug Staging";
+		};
+		CE257E5E2BB7C6C00088AEDC /* Release Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48BBF82E00F5F7B694A62826 /* Pods-TmdbMVP-UICode.release staging.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "TmdbMVP-UICode/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dpfht.TmdbMVP-UICode.staging";
+				PRODUCT_NAME = "$(TARGET_NAME) (Staging)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Release Staging";
+		};
+		CE257E602BB7C6C00088AEDC /* Debug Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FFFD0801EA52A4D42B20F05 /* Pods-TmdbMVP-UICodeTests.debug staging.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q63MQDT7DY;
+				INFOPLIST_FILE = "TmdbMVP-UICodeTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dpfht.TmdbMVP-UICodeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TmdbMVP-UICode.app/TmdbMVP-UICode";
+			};
+			name = "Debug Staging";
+		};
+		CE257E612BB7C6C00088AEDC /* Release Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AF31DCCDBEFD18673AFA2D1 /* Pods-TmdbMVP-UICodeTests.release staging.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q63MQDT7DY;
+				INFOPLIST_FILE = "TmdbMVP-UICodeTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dpfht.TmdbMVP-UICodeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TmdbMVP-UICode.app/TmdbMVP-UICode";
+			};
+			name = "Release Staging";
+		};
+		CE257E632BB7C6C00088AEDC /* Debug Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1741FB3724248FE9574BFF08 /* Pods-TmdbMVP-UICodeUITests.debug staging.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q63MQDT7DY;
+				INFOPLIST_FILE = "TmdbMVP-UICodeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dpfht.TmdbMVP-UICodeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "TmdbMVP-UICode";
+			};
+			name = "Debug Staging";
+		};
+		CE257E642BB7C6C00088AEDC /* Release Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63C88BEA52E908A91BC4A513 /* Pods-TmdbMVP-UICodeUITests.release staging.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q63MQDT7DY;
+				INFOPLIST_FILE = "TmdbMVP-UICodeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dpfht.TmdbMVP-UICodeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "TmdbMVP-UICode";
+			};
+			name = "Release Staging";
+		};
+		CE25823B2BB84DB60088AEDC /* Debug Production */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug Production";
+		};
+		CE25823C2BB84DB60088AEDC /* Debug Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6701E89D26793968F3304AD8 /* Pods-TmdbMVP-UICode.debug production.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "TmdbMVP-UICode/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dpfht.TmdbMVP-UICode.debug";
+				PRODUCT_NAME = "$(TARGET_NAME) (Debug)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug Production";
+		};
+		CE25823D2BB84DB60088AEDC /* Debug Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F40C30088DBC8F5B966B9E4F /* Pods-TmdbMVP-UICodeTests.debug production.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q63MQDT7DY;
+				INFOPLIST_FILE = "TmdbMVP-UICodeTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dpfht.TmdbMVP-UICodeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TmdbMVP-UICode.app/TmdbMVP-UICode";
+			};
+			name = "Debug Production";
+		};
+		CE25823E2BB84DB60088AEDC /* Debug Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 478ED1DAD23812552EAB8CE5 /* Pods-TmdbMVP-UICodeUITests.debug production.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q63MQDT7DY;
+				INFOPLIST_FILE = "TmdbMVP-UICodeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dpfht.TmdbMVP-UICodeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "TmdbMVP-UICode";
+			};
+			name = "Debug Production";
+		};
+		CE25823F2BB84DBC0088AEDC /* Debug Verify */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug Verify";
+		};
+		CE2582402BB84DBC0088AEDC /* Debug Verify */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29A826387B5DCB8BB2CB9825 /* Pods-TmdbMVP-UICode.debug verify.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "TmdbMVP-UICode/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dpfht.TmdbMVP-UICode.verify.debug";
+				PRODUCT_NAME = "$(TARGET_NAME) (Verify-Debug)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug Verify";
+		};
+		CE2582412BB84DBC0088AEDC /* Debug Verify */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F2FE181322BF4E4ED2D3800 /* Pods-TmdbMVP-UICodeTests.debug verify.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q63MQDT7DY;
+				INFOPLIST_FILE = "TmdbMVP-UICodeTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dpfht.TmdbMVP-UICodeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TmdbMVP-UICode.app/TmdbMVP-UICode";
+			};
+			name = "Debug Verify";
+		};
+		CE2582422BB84DBC0088AEDC /* Debug Verify */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94E3C923CD6F6E36802D35FB /* Pods-TmdbMVP-UICodeUITests.debug verify.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q63MQDT7DY;
+				INFOPLIST_FILE = "TmdbMVP-UICodeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dpfht.TmdbMVP-UICodeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "TmdbMVP-UICode";
+			};
+			name = "Debug Verify";
+		};
+		CE2582432BB84DE60088AEDC /* Release Production */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release Production";
+		};
+		CE2582442BB84DE60088AEDC /* Release Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8FB0897FC7099AFC321F21F /* Pods-TmdbMVP-UICode.release production.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "TmdbMVP-UICode/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dpfht.TmdbMVP-UICode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Release Production";
+		};
+		CE2582452BB84DE60088AEDC /* Release Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C65CC599276576BF35FFB46 /* Pods-TmdbMVP-UICodeTests.release production.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q63MQDT7DY;
+				INFOPLIST_FILE = "TmdbMVP-UICodeTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dpfht.TmdbMVP-UICodeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TmdbMVP-UICode.app/TmdbMVP-UICode";
+			};
+			name = "Release Production";
+		};
+		CE2582462BB84DE60088AEDC /* Release Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73E1EF01C3205E90B13E9186 /* Pods-TmdbMVP-UICodeUITests.release production.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q63MQDT7DY;
+				INFOPLIST_FILE = "TmdbMVP-UICodeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dpfht.TmdbMVP-UICodeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "TmdbMVP-UICode";
+			};
+			name = "Release Production";
+		};
+		CE2582472BB84DEB0088AEDC /* Release Verify */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release Verify";
+		};
+		CE2582482BB84DEB0088AEDC /* Release Verify */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E328D86EC507940D92B3D8A /* Pods-TmdbMVP-UICode.release verify.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "TmdbMVP-UICode/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dpfht.TmdbMVP-UICode.verify";
+				PRODUCT_NAME = "$(TARGET_NAME) (Verify)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Release Verify";
+		};
+		CE2582492BB84DEB0088AEDC /* Release Verify */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13310FB2907E48004A4BB86B /* Pods-TmdbMVP-UICodeTests.release verify.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q63MQDT7DY;
+				INFOPLIST_FILE = "TmdbMVP-UICodeTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dpfht.TmdbMVP-UICodeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TmdbMVP-UICode.app/TmdbMVP-UICode";
+			};
+			name = "Release Verify";
+		};
+		CE25824A2BB84DEB0088AEDC /* Release Verify */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB71B930E47C65C6FFC2370F /* Pods-TmdbMVP-UICodeUITests.release verify.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q63MQDT7DY;
+				INFOPLIST_FILE = "TmdbMVP-UICodeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dpfht.TmdbMVP-UICodeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "TmdbMVP-UICode";
+			};
+			name = "Release Verify";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE257E2D2BB7C6B40088AEDC /* Build configuration list for PBXProject "TmdbMVP-UICode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE257E5A2BB7C6C00088AEDC /* Debug Staging */,
+				CE25823F2BB84DBC0088AEDC /* Debug Verify */,
+				CE25823B2BB84DB60088AEDC /* Debug Production */,
+				CE257E5B2BB7C6C00088AEDC /* Release Staging */,
+				CE2582472BB84DEB0088AEDC /* Release Verify */,
+				CE2582432BB84DE60088AEDC /* Release Production */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release Staging";
+		};
+		CE257E5C2BB7C6C00088AEDC /* Build configuration list for PBXNativeTarget "TmdbMVP-UICode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE257E5D2BB7C6C00088AEDC /* Debug Staging */,
+				CE2582402BB84DBC0088AEDC /* Debug Verify */,
+				CE25823C2BB84DB60088AEDC /* Debug Production */,
+				CE257E5E2BB7C6C00088AEDC /* Release Staging */,
+				CE2582482BB84DEB0088AEDC /* Release Verify */,
+				CE2582442BB84DE60088AEDC /* Release Production */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release Staging";
+		};
+		CE257E5F2BB7C6C00088AEDC /* Build configuration list for PBXNativeTarget "TmdbMVP-UICodeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE257E602BB7C6C00088AEDC /* Debug Staging */,
+				CE2582412BB84DBC0088AEDC /* Debug Verify */,
+				CE25823D2BB84DB60088AEDC /* Debug Production */,
+				CE257E612BB7C6C00088AEDC /* Release Staging */,
+				CE2582492BB84DEB0088AEDC /* Release Verify */,
+				CE2582452BB84DE60088AEDC /* Release Production */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release Staging";
+		};
+		CE257E622BB7C6C00088AEDC /* Build configuration list for PBXNativeTarget "TmdbMVP-UICodeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE257E632BB7C6C00088AEDC /* Debug Staging */,
+				CE2582422BB84DBC0088AEDC /* Debug Verify */,
+				CE25823E2BB84DB60088AEDC /* Debug Production */,
+				CE257E642BB7C6C00088AEDC /* Release Staging */,
+				CE25824A2BB84DEB0088AEDC /* Release Verify */,
+				CE2582462BB84DE60088AEDC /* Release Production */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release Staging";
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE257E2A2BB7C6B40088AEDC /* Project object */;
+}
